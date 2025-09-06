@@ -1,0 +1,290 @@
+:root {
+  font-family: 'Montserrat', sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+
+  color: #e8ff51;
+  background-color: #272e1f;
+}
+
+/* Index Page Classes */
+
+.index-full-div {
+  width: 100%;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+}
+
+/* #intro-bottom-of-div {
+  margin-top: 6vh;
+} */
+
+.landing-h1-h2-div {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.landing-h1 {
+  width: 100%;
+  margin: 0;
+  padding-bottom: 2vh;
+  font-size: clamp(17vh, 12vw, 28vh);
+  /* font-size: clamp(6vh, 20vh, 20vh);   <!-- previous height but not scalable, breaks easily */
+  line-height: 1;
+  text-align: right;
+}
+
+.landing-h2 {
+  width: 100%;
+  margin: 0;
+  font-size: clamp(9vh, 7vw, 12vh);
+  line-height: 1;
+  text-align: right;
+  /* font-style: italic; (I didn't like) */
+}
+
+.index-bright-intro {
+  color: #272e1f;
+  background-color: #e8ff51;
+  width: 100%;
+  padding: 10px auto;
+  /* margin-top: 6vh; */
+  border-radius: 8px;
+}
+
+.index-intro-font {
+  font-size: 1.2em; /* clamp(0.88em, 2vh, 3vh); */
+}
+
+.index-links-box {
+  padding: 40px 10 40px 10;
+  border: solid 4px #e8ff51;
+  border-radius: 0.2em;
+  text-align: center;
+}
+
+.index-links-box:hover {
+  border: solid 4px #fea552;
+  color: #fea552;
+}
+
+.index-links {
+  font-size: clamp(1.2em, 3vh, 4vh);
+  text-align: center;
+  align-content: center;
+  padding: 40px 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0px auto;
+  align-items: center;
+}
+
+.index-links a:hover {
+  color: #e8ff51;
+}
+
+/* Blog Page Classes */
+
+.blog-pageTitle {
+  font-size: clamp(1.8vh, 3vw, 10vh);
+  text-align: right;
+  margin-right: 4vw;
+  padding-top: clamp(1.8vh, 2vw, 6vh);
+  padding-bottom: clamp(2vh, 3vw, 10vh);
+}
+
+.blog-div-bright {
+  color: #272e1f;
+  background-color: #e8ff51;
+  padding: 3vw 4vw;
+}
+
+.blog-div-bright p {
+  font-weight: 500;
+}
+
+.blog-div-dark {
+  padding: 4vw;
+  border-left: solid 4px;
+  border-right: solid 4px;
+}
+
+.blog-div-first {
+  border-radius: 12px 12px 0 0;
+}
+
+.blog-div-last {
+  border-radius: 0 0 12px 12px;
+}
+
+.blog-div-last-dark {
+  border-radius: 0 0 12px 12px;
+  border-bottom: solid 4px;
+}
+
+.button-div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 40px;
+  gap: 20px;
+}
+
+.my-button {
+  display: inline-block;
+  border: 2px solid #272e1f;
+  border-radius: 8px;
+  background-color: #e8ff51;
+  color: #272e1f;
+  font-family: montserrat;
+  font-weight: 700;
+  margin: 40px 0 0;
+  padding: 14px 60px 14px;
+  font-size: 1.6em;
+  cursor: pointer;
+  transition:
+    background-color 0.3s,
+    color 0.3s;
+}
+
+.my-button:hover {
+  background-color: #fea552;
+  color: #272e1f;
+  border: 2px solid #fea552;
+  font-size: 2em;
+}
+
+/* Elements common to all pages */
+
+body {
+  margin: 0 5vw;
+  padding: 0;
+}
+
+h1 {
+  font-weight: 900;
+}
+
+h2 {
+  font-weight: 800;
+}
+
+h3 {
+  font-weight: 700;
+}
+
+h4 {
+  font-weight: 600;
+}
+
+p {
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+a:hover {
+  font-size: 1.2em;
+  font-style: italic;
+  color: #fea552;
+  text-decoration: underline;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.image-border-bright {
+  border: 6px solid #fea552;
+  border-radius: 24px;
+  margin: 20px 0;
+}
+
+li {
+  line-height: 1.6;
+}
+
+footer {
+  text-align: right;
+  font-size: 0.8em;
+  margin: 10vh auto 5vh auto;
+}
+
+/* MEDIA QUERIES */
+
+/* widescreen displays */
+@media only screen and (min-width: 920px) {
+  
+
+/* tablets */
+@media only screen and (max-width: 919px) {
+  .landing-full-div {
+    width: 100%;
+    min-height: auto;
+    margin-bottom: 40px;
+    padding-top: 10vh;
+    display: flex;
+  }
+
+  .landing-h1 {
+    font-size: clamp(8vh, 16vw, 18vh);
+  }
+
+  .landing-h2 {
+    font-size: clamp(4.25vh, 8vw, 12vh);
+  }
+
+  .landing-intro-font {
+    font-size: 1em;
+  }
+
+  .landing-bright-intro {
+    margin: 8vh 0 20px;
+    border-radius: 8px;
+  }
+}
+
+/* phones */
+@media only screen and (max-width: 400px) {
+  .landing-full-div {
+    width: 100%;
+    min-height: auto;
+    margin-bottom: 20px;
+    padding-top: 10vh;
+    display: flex;
+  }
+
+  .landing-h1 {
+    font-size: clamp(5vh, 18vw, 18vh);
+    line-height: 0.9;
+    text-align: right;
+  }
+
+  .landing-h2 {
+    font-size: clamp(3.2vh, 8vw, 12vh);
+  }
+
+  .landing-bright-intro {
+    margin: 3vh 0 20px;
+    border-radius: 8px;
+  }
+
+  .landing-intro-font {
+    font-size: 0.9em;
+  }
+}

@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ID vs CLASS</title>
+    <link rel="icon" type="image/png" href="../images/favicon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../styles/main.css" />
+  </head>
+
+  <body>
+    <div class="blog-pageTitle">
+      <h1>IDs vs CLASSES</h1>
+    </div>
+    <article class="blog-div-bright blog-div-first">
+      <h2>
+        <strong>Classes</strong> and <strong>IDs</strong>… what's that
+        about? Here's a quick introductrion to help get your head around things and
+        when to use them.
+      </h2>
+      <br>
+      <p>
+        <strong>IDs</strong> are super specific and cannot be reused. It's like
+        your home address - it cannot be referenced to navigate anywhere else as
+        a final destination. IDs point to one specific location on the webpage,
+        or a single function.
+      </p>
+      <p>
+        <strong>CLASSES</strong> are reusable identifiers that can be applied to
+        multiple elements. They're like suburbs - a shared name that encompasses
+        many different houses within the same area. You use classes to apply
+        consistent styling across elements you want styled the same way
+        throughout your website.
+      </p>
+      <br />
+    </article>
+    <article class="blog-div-dark">
+      <h1><u>IDS</u></h1>
+
+      <p>
+        By nature <strong>IDs</strong> have significantly more importance than
+        Classes when being processed through the web browser (they have higher
+        CSS specificity), and an ID cannot be reused more than once per web
+        page. IDs are best for targeting specific elements in an HTML webpage,
+        like an anchor tag on a section of a webpage (e.g. 'Our Services').
+      </p>
+
+      <h2>USE AN ID WHEN:</h2>
+      <ul class="bullet-point">
+        <li>
+          Creating unique page landmarks (navigation, main content, footer)
+        </li>
+        <li>Setting up JavaScript interactions for specific elements</li>
+        <li>Implementing anchor links within a page</li>
+        <li>Targeting elements for automated testing</li>
+      </ul>
+      <p>Below are examples of IDs in HTML and CSS:</p>
+      <img
+        class="image-border-bright"
+        src="../images/ID-example-01.png"
+        alt="ID CSS example"
+      />
+      <br>
+      <img
+        class="image-border-bright"
+        src="../images/ID-example-02.png"
+        alt="ID CSS example"
+      />
+
+      <p>
+        IDs interact with JavaScript and its functioning, and if you're building
+        a website using HTML & CSS only, IDs aren't essential but can still be
+        useful for styling unique elements.
+      </p>
+      </article>
+
+      <article class="blog-div-bright">
+        <h1><u>CLASSES</u></h1>
+
+      <p>
+        <strong>Classes</strong> are broad but specific to their purpose.
+        They're most successfully used for consistent styling and layouts on a
+        web page and can be applied as many times to elements as needed. If you
+        want to style page section headings (e.g. bold, blue & underlined) this
+        can be done in a Class with specific rules defining how it will look.
+      </p>
+
+      <h2>USE CLASSES WHEN:</h2>
+      <ul class="bullet-point">
+        <li>
+          Styling multiple elements consistently (buttons, cards, text styles)
+        </li>
+        <li>Building reusable component styles</li>
+        <li>
+          Creating modifier variations (.button, .button--large, .button--red)
+        </li>
+        <li>Working with CSS frameworks or design systems</li>
+      </ul>
+      <p>Below are examples of Classes in HTML and CSS:</p>
+      <img
+        class="image-border-bright"
+        src="../images/Class-example-01.png"
+        alt="Class HTML example"
+      />
+      <br>
+      <img
+        class="image-border-bright"
+        src="../images/Class-example-02.png"
+        alt="“Class HTML example"
+      />
+      </article>
+
+      <article class="blog-div-dark blog-div-last-dark">
+        <h2><em>TO SUM IT UP:</em></h2>
+        <p>
+          Think of IDs as your unique home address and classes as your
+          neighborhood. Use IDs sparingly for one-off elements that need
+          JavaScript interaction or serve as page landmarks. Use classes liberally
+          for styling and creating consistent, reusable components across your
+          site. When in doubt, go with classes - they're more flexible and won't
+          cause headaches down the road, and can be reused as many times as you
+          need.
+        </p>
+      </article>
+    </div>
+     <div class="button-div">
+      <a href="te-houtaewa.html" class="my-button">< PREV</a>
+      <a href="../index.html" class="my-button">HOME</a>
+      <a href="identity-values.html" class="my-button">NEXT ></a>
+    </div>
+    <footer>
+      <p>☮︎ 2025 Matt Tomkins</p>
+    </footer>
+  </body>
+</html>
