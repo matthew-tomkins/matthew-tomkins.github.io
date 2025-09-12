@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript 101</title>
+    <link rel="icon" type="image/png" href="../images/favicon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../styles/main.css" />
+  </head>
+
+  <body>
+    <div class="blog-pageTitle">
+      <h1>JAVASCRIPT 101</h1>
+    </div>
+    <article class="blog-div-bright blog-div-first">
+      <h1>JAVASCRIPT & ITS RELATIONSHIP TO HTML AND CSS</h1>
+
+      <h3>HTML + CSS + JS = the holy trinity of the web</h3>
+
+      <p>
+        In web development these three core three languages work together as a
+        team - highly complimentary but completely separate. You write them in
+        different files, then have your HTML document call in the other two when
+        a webpage loads.
+      </p>
+
+      <p>
+        So if HTML defines what content is on a webpage and CSS makes that
+        content look good... what does JavaScript do?
+      </p>
+
+      <p>
+        <strong
+          >JavaScript is what brings real interactivity to a web page</strong
+        >
+        - it responds to clicks, hovers, form submissions, and can change
+        content on the page without needing to reload. Its main purpose is to
+        bridge the gap between static web content and dynamic user experiences.
+      </p>
+    </article>
+    <article class="blog-div-dark">
+      <h1>CONTROL FLOW AND LOOPS</h1>
+
+      <p>
+        <strong>Flow</strong> is how your JavaScript code makes decisions and
+        moves through different paths. Think about making your morning coffee:
+        you check if there's coffee in the machine - if yes, press brew; if no,
+        add coffee first, then press brew. That's control flow - your code
+        following logical decision paths.
+      </p>
+
+      <p>
+        <strong>Loops</strong> are when you need to repeat the same action
+        multiple times. Using the coffee example: imagine you're making coffee
+        for 5 people. Instead of writing "make coffee" five separate times,
+        you'd create a loop that says "make coffee, count one person, repeat
+        until you've made 5 cups." Here's what that looks like in code:
+      </p>
+
+      <div class="codeExample-box">
+        <pre><code class="codeFont">
+for (let cups = 1; cups <= 5; cups++) {
+    console.log("Making coffee cup number: " + cups);
+}
+        </code></pre>
+      </div>
+
+      <p>
+        This loop counts from 1 to 5, making a coffee each time without you
+        having to write repetitive code.
+      </p>
+    </article>
+
+    <article class="blog-div-bright">
+      <h1>ARRAYS VS OBJECTS - ACCESSING DATA</h1>
+
+      <p>
+        Think of <strong>Arrays</strong> like a numbered shopping list. Each
+        item has a position (starting from 0), and you access items by their
+        position number:
+      </p>
+
+      <div class="codeExample-box">
+        <pre><code class="codeFont">
+let fruits = ["apple", "banana", "orange"];
+console.log(fruits[0]); <em>// Gets "apple" (first item)</em>
+console.log(fruits[2]); <em>// Gets "orange" (third item)</em>
+          </code></pre>
+      </div>
+
+      <p>
+        <strong>Objects</strong> are more like a contact card where each piece
+        of info has a specific label - technically these are called Keys. You
+        access information by using the label name:
+      </p>
+
+      <div class="codeExample-box">
+        <pre><code class="codeFont">
+let person = {
+  name: "Sarah",
+  age: 25,
+  email: "sarah@email.com"
+};
+console.log(person.name); <em>// Gets "Sarah"</em>
+console.log(person.age);  <em>// Gets 25</em>
+          </code></pre>
+      </div>
+
+      <p>
+        Arrays are great for lists of similar things (like a shopping list),
+        while objects are perfect for storing related information about one
+        thing (information about a person).
+      </p>
+    </article>
+    <article class="blog-div-dark">
+      <h1>FUNCTIONS (AND WHY THEY'RE USEFUL)</h1>
+
+      <p>
+        <strong>Functions</strong> are custom commands you create to do specific
+        jobs. Think of them like creating your own recipe - you write the
+        instructions once, then you can follow that recipe whenever you need it.
+      </p>
+
+      <div class="codeExample-box">
+        <pre><code class="codeFont">
+function greetPerson(name) {
+    return "Hello, " + name + "! Welcome to our website.";
+}
+
+<em>// Now you can use this function anywhere</em>
+console.log(greetPerson("Matt")); <em>// "Hello, Matt! Welcome to our website.”</em>
+console.log(greetPerson("Sarah")); <em>// "Hello, Sarah! Welcome to our website.”</em>
+        </code></pre>
+      </div>
+
+      <p>
+        Instead of writing the greeting code over and over, you write it once in
+        a function and just call it whenever needed. This makes your code way
+        more efficient, easier to maintain, and if you need to change how
+        greetings work, you only update it in one place.
+      </p>
+    </article>
+
+    <article class="blog-div-bright">
+      <h1>THE DOM AND INTERACTION</h1>
+
+      <p>
+        The DOM (Document Object Model) is how JavaScript sees and interacts
+        with your webpage. It's basically a family tree that maps out every
+        element on your page - every heading, paragraph, button, and image gets
+        its own spot in this tree structure.
+      </p>
+
+      <p>
+        Here's an example: let's say you want to change the text of a button
+        when someone clicks it. JavaScript uses the DOM to grab that specific
+        button element and modify it:
+      </p>
+
+      <div class="codeExample-box">
+        <pre><code class="codeFont">
+<em>// Find the button on the page</em>
+let myButton = document.getElementById("clickMe");
+
+<em>// Change what happens when it's clicked</em>
+myButton.onclick = function() {
+    myButton.innerHTML = "Thanks for clicking!";
+};
+        </code></pre>
+      </div>
+
+      <p>
+        The DOM is the bridge that lets your JavaScript target and manipulate
+        what people see and interact with on your website.
+      </p>
+      <br />
+    </article>
+    <article class="blog-div-dark">
+      <h1>DEVTOOLS - YOUR DEBUGGING COMPANION</h1>
+
+      <p>
+        DevTools is built into every web browser and it's your best mate for
+        understanding what's happening in your code. You can right-click on any
+        webpage and select "Inspect" to open it up. It lets you see the HTML
+        structure, CSS styling, watch JavaScript run in real-time, and catch
+        errors before they become bigger problems. It's a behind the scenes look
+        at websites.
+      </p>
+    </article>
+    <article class="blog-div-bright blog-div-last">
+      <h1>TO SUM IT UP</h1>
+
+      <p>
+        JavaScript transforms static web pages into dynamic, interactive
+        experiences. Working in harmony with HTML and CSS, it handles all the
+        logic and interactivity. Through the DOM, JavaScript can manipulate
+        every element on your page, while DevTools gives you the power to debug
+        and refine your code until it works exactly how you want it. JavaScript
+        is JavaCool.
+      </p>
+    </article>
+
+    <div class="button-div">
+      <a href="emotional-intelligence.html" class="my-button">< PREV</a>
+      <a href="../index.html" class="my-button">HOME</a>
+      <a href="../index.html" class="my-button">NEXT ></a>
+    </div>
+
+    <footer>
+      <p>☮︎ 2025 Matt Tomkins</p>
+    </footer>
+  </body>
+</html>

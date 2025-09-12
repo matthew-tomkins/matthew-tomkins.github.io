@@ -163,6 +163,32 @@
   font-size: 2em;
 }
 
+/* Code Example Div Styles */
+
+.codeExample-box {
+  display: flex;
+  flex-wrap: wrap;
+  color: #272e1f;
+  background-color: #fea552;
+  margin: 20px 0;
+  padding: 20px;
+  border: #272e1f solid 8px;
+  border-radius: 16px;
+}
+
+.codeExample-box pre {
+  margin: 0;
+  padding: 0 4vw;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  overflow-x: auto;
+}
+
+.codeFont {
+  font-size: 1.2em;
+  line-height: 1.4;
+}
+
 /* Elements common to all pages */
 
 body {
