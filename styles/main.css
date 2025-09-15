@@ -71,10 +71,11 @@
   text-align: center;
 }
 
-.index-links-box:hover {
-  border: solid 4px #fea552;
-  color: #fea552;
-}
+/* NOT USED ANYMORE */
+/* .index-links-box:hover { */
+/* border: solid 4px #fea552; */
+/* color: #fea552; */
+/* } */
 
 .index-links {
   font-size: clamp(1.2em, 3vh, 4vh);
@@ -89,7 +90,7 @@
 }
 
 .index-links a:hover {
-  color: #e8ff51;
+  color: #fea552;
 }
 
 /* Blog Page Classes */
