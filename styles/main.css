@@ -56,7 +56,7 @@
   background-color: #e8ff51;
   width: 100%;
   padding: 8px 5vw;
-  border-radius: 8px;
+  border-radius: 12px;
   box-sizing: border-box;
 }
 
@@ -65,6 +65,9 @@
 }
 
 .index-links-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   padding: 40px 10 40px 10;
   border: solid 4px #e8ff51;
   border-radius: 0.2em;
@@ -77,6 +80,7 @@
 /* color: #fea552; */
 /* } */
 
+/* PREVIOUS VERSION
 .index-links {
   font-size: clamp(1.2em, 3vh, 4vh);
   text-align: center;
@@ -87,10 +91,32 @@
   justify-content: center;
   margin: 0px auto;
   align-items: center;
+} */
+
+.index-links {
+  font-size: clamp(1.2em, 3vh, 4vh);
+  text-align: center;
+  align-content: center;
+  padding: 40px 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0px auto;
+  border-radius: 0.2em;
+  align-items: center;
+}
+
+.index-links a {
+  transition: all 0.3s ease;
+  padding: 8px 0;
+  transition: all 0.3s ease;
 }
 
 .index-links a:hover {
-  color: #fea552;
+  color: #272e1f;
+  background-color: #fea552;
+  border-radius: 12px;
+  padding: 8px 24px;
 }
 
 /* Blog Page Classes */
@@ -125,6 +151,10 @@
 
 .blog-div-last {
   border-radius: 0 0 12px 12px;
+}
+
+.blog-div-first-and-last {
+  border-radius: 12px;
 }
 
 .blog-div-last-dark {
@@ -226,9 +256,9 @@ a {
 
 a:hover {
   font-size: 1.2em;
-  font-style: italic;
+  /*font-style: italic; */
   color: #fea552;
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 img {
